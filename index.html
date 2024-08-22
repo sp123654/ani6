@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .mainbody{height:400px;width:100%;border:4px solid; }
+          .a .outer{height: 150px;width: 150px;perspective: 300px; border:2px solid red;
+            border-radius: 50%; float:left;margin-left: 3%; margin-top:8%;
+        }
+         .a .inner{height:100%;width:100%;animation:flip 4s;animation-fill-mode:forwards;
+        transform-style: preserve-3d;border-radius: 50%; animation-play-state: running;animation-iteration-count: infinite;
+    }
+   .a .front, .back{height:100%;width:100%;position: absolute;backface-visibility: hidden;}
+   .a .front img{height: 150px;width: 150px;border:1px solid; border-radius: 50%; }
+   .a .back{transform:rotatey(180deg);background:blue;border-radius: 50%;overflow: hidden; }
+        .a .back h1{position:relative;top:10%;left:14%}
+       .a .back p{position:relative;top:3%;left:14%; }
+
+
+       .a .outer:hover .inner{
+        animation-play-state: paused;
+       }
+
+
+    .b .outer{height: 150px;width: 150px;perspective: 300px;border:2px solid blue;border-radius: 50%; float:left;margin-left: 30%; margin-top: 4%;}
+    .b .inner{height:100%;width:100%;animation:flip 4s;animation-fill-mode:forwards;animation-iteration-count: infinite;
+        transform-style: preserve-3d;border-radius: 50%;animation-play-state: running;
+    }
+   .b .front, .back{height:100%;width:100%;position: absolute;backface-visibility: hidden;}
+    .b .front img{height: 150px;width: 150px;border-radius: 50%; }
+   .b .back{transform:rotatey(180deg);background:red;border-radius: 50%;overflow: hidden; }
+       .b .back h1{position:relative;top:10%;left:14%}
+       .b .back p{position:relative;top:5%;left:14%; }
+
+       .b .outer:hover .inner{
+        animation-play-state: paused;
+       }
+
+
+
+    .c .outer{height: 150px;width: 150px;perspective: 300px;border:2px solid red;border-radius: 50%; float:left;margin-left: 25%; margin-top:-15%;}
+    .c .inner{height:100%;width:100%;animation:flip 4s;animation-fill-mode:forwards;animation-iteration-count: infinite;
+        transform-style: preserve-3d;border-radius: 50%;animation-play-state: running;
+    }
+   .c .front, .back{height:100%;width:100%;position: absolute;backface-visibility: hidden;}
+    .c .front img{height: 150px;width: 150px;border-radius: 50%; }
+   .c .back{transform:rotatey(180deg);background:yellow;border-radius: 50%;overflow: hidden; }
+       .c .back h1{position:relative;top:10%;left:5%}
+       .c .back p{position:relative;top:5%;left:14%; }
+
+       .c .outer:hover .inner{
+        animation-play-state: paused;
+       }
+
+
+
+       .d .outer{height: 150px;width: 150px;perspective: 300px;border:2px solid red;border-radius: 50%; float:left;margin-left: 85%;margin-top: -29%;}
+    .d .inner{height:100%;width:100%;animation:flip 4s;animation-fill-mode:forwards;animation-iteration-count: infinite;
+        transform-style: preserve-3d;border-radius: 50%;animation-play-state: running;
+    }
+   .d .front, .back{height:100%;width:100%;position: absolute;backface-visibility: hidden;}
+    .d .front img{height: 150px;width: 150px;border-radius: 50%; }
+   .d .back{transform:rotatey(180deg);background:green;border-radius: 50%;overflow: hidden; }
+       .d .back h1{position:relative;top:10%;left:14%}
+       .d .back p{position:relative;top:5%;left:14%; }
+
+       .d .outer:hover .inner{
+        animation-play-state: paused;
+       }
+
+
+
+       
+       .e .outer{height: 150px;width: 150px;perspective: 400px;border:2px solid blue;border-radius: 50%; float:left;margin-left: 65%;margin-top: -18%;}
+    .e .inner{height:100%;width:100%;animation:flip 4s;animation-fill-mode:forwards;animation-iteration-count: infinite;
+        transform-style: preserve-3d;border-radius: 50%; animation-play-state: running;
+    }
+   .e .front, .back{height:100%;width:100%;position: absolute;backface-visibility: hidden;}
+    .e .front img{height: 150px;width: 150px;border-radius: 50%; }
+   .e .back{transform:rotatey(180deg);background:rgb(249, 1, 249);border-radius: 50%;overflow: hidden; }
+       .e .back h1{position:relative;top:10%;left:14%}
+       .e .back p{position:relative;top:5%;left:14%; }
+
+       .e .outer:hover .inner{
+        animation-play-state: paused;
+       }
+
+
+
+    @keyframes flip{
+        0%{transform: rotatey(0deg);}
+        100%{transform:rotatey(180deg);}
+    }
+    </style>
+</head>
+<body>
+    <div class="mainbody">
+    <div class="a">
+        <div class="outer">
+            <div class="inner">
+                <div class="front">
+                    <img src="/IMAGES/screen.jpg">
+                </div>
+                <div class="back">
+                     <h1>Screen</h1> 
+                    <p>A computer monitor is an electronic device that shows pictures for computers. Monitors often look like smaller televisions. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b">
+        <div class="outer">
+            <div class="inner">
+                <div class="front">
+                    <img src="/IMAGES/cpu.jpg">
+                </div>
+                <div class="back">
+                     <h1>C.P.U</h1> 
+                    <p>A CPU, or central processing unit, is the brain of the computer. Like a human brain, the CPU controls all the functions of the computer. The CPU's job is to listen for input data from devices like a mouse or other software.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c">
+        <div class="outer">
+            <div class="inner">
+                <div class="front">
+                    <img src="/IMAGES/keybord.jpg">
+                </div>
+                <div class="back">
+                    <h1>Keyboard</h1> 
+                    <p>
+                        A keyboard contains many push buttons. Push buttons are called 'Keys. ' It allows a person to enter letters, numbers, and other symbols into a computer. The keyboard is connected to the computer with a wire or USB.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d">
+        <div class="outer">
+            <div class="inner">
+                <div class="front">
+                    <img src="/IMAGES/mouse.jpg">
+                </div>
+                <div class="back">
+                    <h1>Mouse</h1> 
+                    <p> A mouse is a small device that a computer user pushes across a desk surface in order to point to a place on a display screen and to select one or more actions to take from that position.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="e">
+        <div class="outer">
+            <div class="inner">
+                <div class="front">
+                    <img src="/IMAGES/speaker.jpg">
+                </div>
+                <div class="back">
+                    <h1>Speaker</h1> 
+                    <p>Speakers are standard output devices used with computer systems that enable the listener to listen to a sound as an outcome. Some speakers are used once they have been linked to a computer.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
